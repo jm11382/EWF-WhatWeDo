@@ -15,7 +15,6 @@ header {
     background-color: #0077BA;
     justify-content: flex-end;
     align-items: center;
-    padding: 24px;
 }
 .hamburger{
     display: none;
@@ -42,7 +41,6 @@ header {
 .navCstm {
     display: flex;
     justify-content: flex-end;
-    padding: 16px;
     align-items: center;
 }
 @media only screen and (max-width: 1000px) {
@@ -88,21 +86,85 @@ header {
     transform: rotate(45deg) translate(-5px,-12px);
     transition: 0.3s ease;
 }
-.navlink {
+
+.logoContainer{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    padding: 18px;
+}
+
+.logoContainer:hover{
+    background-color: #004f7c;
+}
+
+.navlink{
     color: white;
     text-decoration: none;
     padding: 16px;
+    padding-top: 20.53px;
+    padding-bottom: 20.53px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
+
+.navlink2{
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    padding-bottom: 19.825px;
+    padding-top: 25.825px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 .navlink:hover{
-    opacity: 0.4;
+    color: white;
+    background-color: #004f7c;
 }
-.navlogo {
+
+.navlink2:hover{
+    color: white;
+    background-color: #004f7c;
+}
+
+.dropdown-menu{
+    background-color: #0077BA;
+    border: 0;
+    border-radius: 0px;
+    border-bottom-left-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    padding: 0px;
+}
+.dropdown-toggle::after {
+    border-top: 0px solid;
+    border-right: 0px solid transparent;
+    border-bottom: 0px;
+    border-left: 0px solid transparent;
+    content: url(../images/arrow.svg);
+}
+
+ul{
+    padding-inline-start: 0px;
+}
+
+.donoContainer{
     display: flex;
     justify-content: center;
-    padding-right: 348px;
+    align-items: center;
+    height: 72px;
+    width: auto;
 }
+
+.donoContainer:hover{
+    color: #004f7c;
+    background-color: #004f7c;
+}
+
 @media only screen and (max-width: 1000px) {
     .navlogo{
         display: flex;
@@ -194,7 +256,7 @@ h4{
     color: white;
     font-weight: 400;
     max-width: 45%;
-    z-index: 9998;
+    z-index: 200;
 }
 
 /*------------------------------ Buttons ------------------------------*/
@@ -225,6 +287,14 @@ h4{
     margin-left: 16px;
     margin-right: 16px;
 }
+
+.donoInvert::after{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: 0;
+    content: url(../images/donateicon.svg);
+}
+
 .stdDark{
     padding: 12px 12px;
     font-size: 20px;
