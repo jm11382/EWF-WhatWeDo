@@ -16,9 +16,11 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
+
 .hamburger{
     display: none;
 }
+
 @media only screen and (max-width: 1000px) {
     .hamburger{
         display: flex;
@@ -43,6 +45,17 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
+
+.navlink3{
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    padding-bottom: 19.825px;
+    padding-top: 25.825px;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 @media only screen and (max-width: 1000px) {
     .navCstm{
         display: flex;
@@ -60,10 +73,23 @@ header {
     .navlink{
         opacity: 0%;
     }
+    .navlink3{
+        color: #0077BA;
+        text-decoration: none;
+        padding: 16px;
+        padding-bottom: 19.825px;
+        padding-top: 25.825px;
+        font-weight: 400;
+        font-size: 18px;
+        background-color: white;
+    }
 }
 .nav-active {
     display: flex;
     transform: translateX(0%);
+    justify-content: start;
+    align-items: flex-start;
+    padding: 36px;
 }
 @keyframes navLinkFade{
     from{
@@ -139,6 +165,7 @@ header {
     border-bottom-left-radius: .25rem;
     border-bottom-right-radius: .25rem;
     padding: 0px;
+    transform: translate(0, 68px);
 }
 .dropdown-toggle::after {
     border-top: 0px solid;

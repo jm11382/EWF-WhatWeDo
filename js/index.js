@@ -2,7 +2,7 @@
 const navSlide = () => {
     const burger = document.querySelector('.hamburger');
     const nav = document.querySelector('.navCstm');
-    const navLinks = document.querySelectorAll('.navCstm a');
+    const navLinks = document.querySelectorAll('.navlink');
 
 
 
